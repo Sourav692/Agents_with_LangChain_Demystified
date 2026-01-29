@@ -187,4 +187,4 @@ langgraph==0.2.66
 
 # -----------------------------------------------------------------------------
 # Windows-specific dependency
-pywin32==310; sys_platform == 'win32'
+# pywin32==310; sys_platform == 'win32'
