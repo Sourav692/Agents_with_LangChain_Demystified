@@ -94,42 +94,91 @@ Whether you're looking to understand prompt engineering, build conversational AI
 ```
 LangChain_Demystified/
 │
-├── 1. Introduction/                    # Getting started with LangChain
-│   ├── 1. Introduction.ipynb
-│   ├── 2. Basics of Chains.ipynb
-│   ├── 3. Memory.ipynb
-│   ├── 4. Basics of Tools and Functions.ipynb
-│   ├── 6. Implementing RAG.ipynb
-│   ├── 7. Summarization.ipynb
-│   ├── 8. Advance LangChain.ipynb
-│   └── LCEL.ipynb
-│
-├── 2. Concepts/                        # Deep-dive into core concepts
-│   ├── 0. Introduction/                # LLM Provider Integration
-│   │   ├── Commercial_LLMs_Natively.ipynb
-│   │   ├── Commercial_LLMs_with_LangChain.ipynb
-│   │   ├── Open_Source_LLMs_HF_Transformers.ipynb
-│   │   ├── Open_Source_LLMs_Groq_Cloud.ipynb
-│   │   └── Open_Source_LLMs_with_LangChain.ipynb
+├── LangChain_Fundamentals/             # 📚 Core LangChain Curriculum (56 notebooks)
 │   │
-│   ├── 1. OpenAI_API/                  # Direct OpenAI API usage
-│   ├── 2. LangChain_Inputs_and_Outputs/
-│   ├── 2.1. Prompt_Templates/          # Prompt engineering
-│   ├── 3. Langchain Expression Language/  # LCEL & Runnables
-│   ├── 4. LLM Input_Output/            # LLMs vs Chat Models
-│   ├── 4.1. Chains/                    # Chain compositions
-│   ├── 5. Chat Message Memory/         # Conversation memory systems
-│   ├── 6. Advanced Concepts/           # Caching, Streaming, Callbacks
-│   ├── 7. Branching, Routing And Linking Chains/
-│   ├── 8. Hybrid_Search_and_Indexing_API/
-│   ├── 9. Text Summarization/
-│   ├── 10. OpenAI_Functions/           # Tool calling
-│   ├── 11. RAG/                        # Retrieval-Augmented Generation
-│   ├── 12. Agents/                     # Autonomous AI Agents
-│   ├── 13. LangSmith/                  # Tracing & Evaluation
-│   └── 14. MicroServiceArchitecture/   # Production deployment
+│   ├── 01_Getting_Started/             # Introduction & LLM Providers (8 notebooks)
+│   │   ├── 1.0_LangChain_Introduction.ipynb
+│   │   ├── 1.1_Commercial_LLMs_Natively.ipynb
+│   │   ├── 1.2_Commercial_LLMs_with_LangChain.ipynb
+│   │   ├── 1.3_Open_Source_LLMs_HF_Transformers.ipynb
+│   │   ├── 1.4_Open_Source_LLMs_HF_Inference_Client.ipynb
+│   │   ├── 1.5_Open_Source_LLMs_Groq_Cloud.ipynb
+│   │   ├── 1.6_Open_Source_LLMs_with_LangChain.ipynb
+│   │   └── 1.7_OpenAI_API_Basics.ipynb
+│   │
+│   ├── 02_Inputs_Outputs_Prompts/      # I/O & Prompt Engineering (6 notebooks)
+│   │   ├── 2.1_LangChain_Inputs_and_Outputs.ipynb
+│   │   ├── 2.2_Prompt_Templates.ipynb
+│   │   ├── 2.3_LLM_vs_ChatModel.ipynb
+│   │   ├── 2.4_PromptTemplate_with_LangChain.ipynb
+│   │   ├── 2.5_Output_Parser.ipynb
+│   │   └── 2.6_LangChain_LLM_Input_Output_Comprehensive.ipynb
+│   │
+│   ├── 03_LCEL/                        # LangChain Expression Language (7 notebooks)
+│   │   ├── 3.0_LCEL_Essentials.ipynb
+│   │   ├── 3.1_LCEL_Introduction.ipynb
+│   │   ├── 3.2_Runnables.ipynb
+│   │   ├── 3.3_LCEL_Deepdive.ipynb
+│   │   ├── 3.4_LCEL_and_Runnables.ipynb
+│   │   ├── 3.5_Chain_Migrations.ipynb
+│   │   └── 3.6_Chain_Migration_Advanced.ipynb
+│   │
+│   ├── 04_Chains/                      # Chain Compositions (4 notebooks)
+│   │   ├── 4.0_Basics_of_Chains.ipynb
+│   │   ├── 4.1_Chains_Basics_and_OutputParsers.ipynb
+│   │   ├── 4.2_Advanced_Chains.ipynb
+│   │   └── 4.3_Branching_Routing_Merging_Chains.ipynb
+│   │
+│   ├── 05_Memory/                      # Conversation Memory Systems (9 notebooks)
+│   │   ├── 5.0_Memory_Essentials.ipynb
+│   │   ├── 5.1_Chat_Message_Memory.ipynb
+│   │   ├── 5.2_Introduction_Conversation_Chain.ipynb
+│   │   ├── 5.3_Conversation_Chains_Memory_LCEL.ipynb
+│   │   ├── 5.4_Multi_User_InMemory_Storage.ipynb
+│   │   ├── 5.5_Multi_User_SQL_Persistent_Storage.ipynb
+│   │   ├── 5.6_ConversationQA.ipynb
+│   │   ├── 5.7_Memory_Another_Example.ipynb
+│   │   └── 5.8_Memory_Code.ipynb
+│   │
+│   ├── 06_Tools_and_Functions/         # Tool Calling (4 notebooks)
+│   │   ├── 6.0_Tools_Functions_Essentials.ipynb
+│   │   ├── 6.1_Tool_Calling_LangChain.ipynb
+│   │   ├── 6.2_Tool_Calling_Agents.ipynb
+│   │   └── 6.3_OpenAI_Tool_Calling.ipynb
+│   │
+│   ├── 07_RAG/                         # Retrieval-Augmented Generation (4 notebooks)
+│   │   ├── 7.0_RAG_Essentials.ipynb
+│   │   ├── 7.1_RAG_Comprehensive.ipynb
+│   │   ├── 7.2_Filtered_Search.ipynb
+│   │   └── 7.3_Indexing_API.ipynb
+│   │
+│   ├── 08_Summarization/               # Text Summarization (2 notebooks)
+│   │   ├── 8.0_Summarization_Essentials.ipynb
+│   │   └── 8.1_Text_Summarization.ipynb
+│   │
+│   ├── 09_Advanced_Features/           # Production Features (6 notebooks)
+│   │   ├── 9.0_Advanced_LangChain.ipynb
+│   │   ├── 9.1_LLM_Cost_Monitoring.ipynb
+│   │   ├── 9.2_Caching.ipynb
+│   │   ├── 9.3_Streaming.ipynb
+│   │   ├── 9.4_Moderating_Chains.ipynb
+│   │   └── 9.5_Callbacks.ipynb
+│   │
+│   ├── 10_Agents/                      # Building Agents (1 notebook)
+│   │   └── 10.1_Agents.ipynb
+│   │
+│   ├── 11_LangSmith/                   # Tracing & Evaluation (1 notebook)
+│   │   └── 11.1_LangSmith_Basics.ipynb
+│   │
+│   ├── 12_MicroServices/               # Production Deployment
+│   │   └── (Docker, Kubernetes, FastAPI templates)
+│   │
+│   └── _Archive/                       # Deprecated/Duplicate files
+│       ├── Deprecated/
+│       ├── Duplicates/
+│       └── Miscellaneous/
 │
-├── 3. Projects/                        # Real-world applications
+├── 3. Simple_Projects_with_LangChain/  # Real-world Applications (11+ projects)
 │   ├── 1. Create a Review Analyst.ipynb
 │   ├── 2. Create Research Paper Analyst.ipynb
 │   ├── 3. Create Social Media Marketing Analyst.ipynb
@@ -142,7 +191,7 @@ LangChain_Demystified/
 │   ├── 10. chat_stream.py
 │   └── 11. project_custom_chatgpt_with_langchain_from_scratch.ipynb
 │
-├── 4. Building AI Agents with LangChain/  # Advanced Agent Development
+├── 4. AI_Agents_with_LangChain/        # Advanced Agent Development
 │   ├── Module 1/                       # Agent Tools & Tool Calling
 │   ├── Module 2/                       # Agentic AI Research Assistant
 │   ├── Module 3/                       # Multi-User Conversational Agents
@@ -161,19 +210,19 @@ LangChain_Demystified/
 
 ### 🌟 Introduction to LLMs
 
-Learn to work with various LLM providers:
+Learn to work with various LLM providers in `LangChain_Fundamentals/01_Getting_Started/`:
 
 | Provider | Integration Type | Notebook |
 |----------|-----------------|----------|
-| OpenAI | Native API + LangChain | `0. Introduction/1-2.*.ipynb` |
+| OpenAI | Native API + LangChain | `1.0-1.2, 1.7` |
 | Google Gemini | LangChain | `langchain-google-genai` |
-| HuggingFace | Transformers + Inference API | `0. Introduction/3-4.*.ipynb` |
-| Groq | High-speed inference | `0. Introduction/5.*.ipynb` |
-| Open Source Models | LangChain integration | `0. Introduction/6.*.ipynb` |
+| HuggingFace | Transformers + Inference API | `1.3-1.4` |
+| Groq | High-speed inference | `1.5` |
+| Open Source Models | LangChain integration | `1.6` |
 
 ### 🔗 LangChain Expression Language (LCEL)
 
-Master the modern way to compose LangChain components:
+Master the modern way to compose LangChain components in `03_LCEL/`:
 
 - **Runnables**: The building blocks of LCEL
 - **Chaining**: Pipe operators for composable workflows
@@ -183,7 +232,7 @@ Master the modern way to compose LangChain components:
 
 ### 💾 Memory Systems
 
-Build stateful conversational applications:
+Build stateful conversational applications in `05_Memory/`:
 
 - **Buffer Memory**: Simple conversation history
 - **Summary Memory**: Compressed conversation context
@@ -193,7 +242,7 @@ Build stateful conversational applications:
 
 ### 🔍 Retrieval-Augmented Generation (RAG)
 
-Build production-ready RAG pipelines:
+Build production-ready RAG pipelines in `07_RAG/`:
 
 - **Document Loading & Splitting**
 - **Vector Embeddings** (OpenAI, HuggingFace)
@@ -203,7 +252,7 @@ Build production-ready RAG pipelines:
 
 ### 🤖 Agents & Tool Calling
 
-Create autonomous AI systems:
+Create autonomous AI systems in `06_Tools_and_Functions/` and `10_Agents/`:
 
 - **OpenAI Function Calling**: Structured tool invocation
 - **ReAct Pattern**: Reasoning + Acting framework
@@ -211,6 +260,8 @@ Create autonomous AI systems:
 - **Multi-Agent Systems**: Collaborative AI workflows
 
 ### 📊 Advanced Features
+
+Production-ready features in `09_Advanced_Features/`:
 
 - **Cost Monitoring**: Track API usage and costs
 - **Caching**: Reduce latency and costs
