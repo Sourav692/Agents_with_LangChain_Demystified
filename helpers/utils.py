@@ -152,7 +152,7 @@ def get_groq_llm(model_name: str = "llama-3.3-70b-versatile", temperature: float
     )
 
 
-def get_databricks_llm(model_name: str = "databricks-gpt-5-2", temperature: float = 0.1):
+def get_databricks_llm(model_name: str = "databricks-gpt-5-1", temperature: float = 0.1):
     """
     Create and return a Databricks Chat LLM instance.
     """
